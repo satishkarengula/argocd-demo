@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  namespace: default
-  name: uat-cm
-data:
-  DB_NAME: "sk-uat.db.com:1234"
-  APP_ENV: "UAT"
