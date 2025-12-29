@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cm-demo
+  labels:
+    app: cm-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cm-demo
+  template:
+    metadata:
+      labels:
+        app: cm-demo
+    spec:
+      containers:
+        - name: cm-demo
+          image: satishkarengula/cm-demo:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - configMapRef:
+                name: dev-cm
+            - secretRef:
+                  name: test-secret

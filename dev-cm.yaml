@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dev-cm
+data:
+  DB_NAME: "sk-dev.db.com:1234"
+  APP_ENV: "DEV"
