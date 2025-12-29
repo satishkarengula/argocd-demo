@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: cm-demo
-          image: satishkarengula/cm-demo:v1
+          image: satishkarengula/demo-pyapp:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
