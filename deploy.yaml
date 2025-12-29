@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: default
   name: cm-demo
   labels:
     app: cm-demo
@@ -25,3 +26,4 @@ spec:
                 name: dev-cm
             - secretRef:
                   name: test-secret
+---
