@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: cm-demo
-          image: docker-repo.sk-devops.com/docker-sk-repo/sk:33c987e
+          image: docker-repo.sk-devops.com/docker-sk-repo/sk:8c1a429
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
